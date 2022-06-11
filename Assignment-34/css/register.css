@@ -1,0 +1,157 @@
+
+/* style to all html and body */
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height:100%;
+}
+
+/* style to background picture */
+#background {
+    background-color: #000;
+    background-image: url(../images/confetti.jpg);
+    background-position: center;
+    background-size: cover;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+/* apply style to all the logincontainer */
+#logincontainer * {
+    color: #fff;
+
+    /* setup font and backup font, with sans-serif without end strokes */
+    font-family: "Arial", "Helvetica", sans-serif;
+    font-weight: normal;
+
+    /* 1 em means whatever the system current font size is */
+    line-height: 1em;
+
+    /* boorder-box means padding and border are included in the width and height */
+    box-sizing: border-box;
+}
+
+/* only apply to logincontainer div */
+#logincontainer {
+    width: 80%;
+
+    /* top and bottom 0 margin, left and right auto margin, means it is center*/
+    margin: 0 auto;
+    position: relative;
+    max-width: 1024px;
+}
+
+#inputContainer {
+    width: 400px;
+    padding: 45px;
+    float: left;
+    /* make a right vertical line  */
+    border-right: 1px solid #e3e3e3;
+}
+
+/* style Login to your account and create your accout text*/
+#inputContainer h2 {
+    text-align:center;
+
+}
+
+/* style all the input form with type text, email and password */
+#inputContainer input[type="text"],
+#inputContainer input[type="email"],
+#inputContainer input[type="password"] {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    height: 28px;
+    line-height: 28px;
+    width: 100%;
+}
+
+/* style for the label such as: username, password... */
+#inputContainer label {
+    color: #ffc863;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+/* style buttons */
+#inputContainer button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 198px;
+    color: #f7f7f7;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin: 20px auto;
+    height: 40;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+#inputContainer button:hover {
+    cursor: pointer;
+}
+
+
+.hasAccountText {
+    text-align: center;
+}
+
+.hasAccountText span{
+    font-size: 12px;
+}
+
+
+
+/* placeholder styles, search from google, for all kinds of browers */
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #fff;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color:    #fff;
+}
+
+/* style the right side text */
+#loginText {
+    padding: 45px;
+    display: table-cell;
+}
+
+#loginText h1{
+    color: #15ef39;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#loginText h2{
+    margin: 35 0;
+}
+
+#loginText ul {
+    padding: 0;
+}
+
+#loginText li {
+    font-size: 20px;
+    list-style-type: none;
+    padding: 10px;
+}

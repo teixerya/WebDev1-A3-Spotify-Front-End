@@ -1,0 +1,101 @@
+<html>
+<head>
+	<title>Spotify Register</title>
+
+	<!-- set up register.html styles with external css file-->
+	<link rel="stylesheet" href="css/register.css" type="text/css">
+
+</head>
+<body>
+	<!-- background picture div -->
+	<div id="background">
+
+		<!-- div for login in forms -->
+		<div id="loginContainer">
+
+			<div id = "inputContainer">
+				<form id = "loginForm" action = "" method ="POST">
+					<h2>Login to your account</h2>
+		            <p>
+			             <label for="loginUsername">Username</label>
+			             <input id ="loginUsername" name = "loginUsername" type = "text" placeholder = "e.g. Homer Simpson" required>
+					 </p>
+
+		            <p>
+			             <label  for = "loginPassword">Password</label>
+			             <input id = "loginPassword" name = "loginPassword" type = "password" placeholder = "your password" required>
+		            </p>
+
+					<button type="submit" name="loginButton">Log In</button>
+
+					<div class="hasAccountText">
+						<span id=hideLogin>Don't have an account yet? Sign up here.</span>
+					</div>
+
+				</form>
+
+
+		        <form id = "registerForm" action = "register.php" method ="POST">
+					<h2>Create your free account</h2>
+		            <p>
+			             <label for="username">Username</label>
+			             <input id ="username" name = "username" type = "text" placeholder = "e.g. Homer Simpson" required>
+					</p>
+
+		            <p>
+			             <label for="firstName">First Name</label>
+			             <input id ="firstName" name = "firstName" type = "text" placeholder = "e.g. Homer" required>
+		            </p>
+
+		            <p>
+			             <label for="lastName">Last Name</label>
+			             <input id ="lastName" name = "lastName" type = "text" placeholder = "e.g. Simpson" required>
+		            </p>
+
+		            <p>
+			             <label for="email">Email</label>
+			             <input id ="email" name = "email" type = "email" placeholder = "e.g. hsimpson@gmail.com" required>
+		            </p>
+
+		            <p>
+			             <label for="conEmail">Confirm Email</label>
+			             <input id ="conEmail" name = "conEmail" type = "email" placeholder = "e.g.hsimpson@gmail.com" required>
+		            </p>
+
+		            <p>
+			             <label for="password">Password</label>
+			             <input id ="password" name = "password" type = "password" placeholder = "your password" required>
+		            </p>
+
+		            <p>
+			             <label for="conPassword">Confirm Password</label>
+			             <input id="conPassword" name="conPassword" type="password" placeholder = "your password" required>
+		            </p>
+
+
+		            <button type="submit" name="registerButton">Sign Up</button>
+
+					<div class="hasAccountText">
+						<span id=hideRegister>Already have an account? Log in here.</span>
+					</div>
+
+				</form>
+
+			</div>
+
+			<!-- right section -->
+			<div id="loginText">
+				<h1>Get free music, right now.</h1>
+				<h2>Listen to your favorite songs unlimited</h2>
+				<ul>
+					<li>Discover Music you'll fall in love with</li>
+					<li>Create your own playlist</li>
+					<li>Follow your favorite artist</li>
+				</ul>
+			</div>
+
+		</div>
+
+	</div>
+</body>
+</html>

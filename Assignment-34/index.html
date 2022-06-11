@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Spotify Player</title>
+
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+    </head>
+
+    <body>
+
+        <div id="mainContainer">
+
+            <div id="topContainer">
+
+                <div id="navBarContainer">
+                    <nav class="navBar">
+                        <a href="index.html" class="logo">
+                            <img src="images/logo.jpg" alt="logo">
+                        </a>
+
+                        <div class="group">
+
+                            <div class="navItem">
+                                <a href="na.html" class="navItemLink">
+                                    Search
+                                    <img src="images/icons/search.png" class="searchIcon" alt="Search">
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="group">
+
+                            <div class="navItem">
+                                <a href="index.html" class="navItemLink">Browse</a>
+                            </div>
+
+                            <div class="navItem">
+                                <a href="na.html" class="navItemLink">Your Music</a>
+                            </div>
+
+                            <div class="navItem">
+                                <a href="about.html" class="navItemLink">About</a>
+                            </div>
+
+                            <div class="navItem">
+                                <a href="register.html" class="navItemLink">Register</a>
+                            </div>
+
+                            <div class="navItem">
+                                <a href="survey.html" class="navItemLink">Survey Form</a>
+                            </div>
+
+                        </div>
+
+
+
+                    </nav>
+                </div>
+
+                <div id="mainViewContainer">
+
+                    <!-- this is where we show our content of each page. -->
+                    <div id="mainContent">
+
+                        <h1 class="headingBig">You May Also Like</h1>
+
+                        <div class="gridViewContainer">
+
+                            <div class="gridViewItem">
+                                <img src="images/album/car1.jpg" alt="winter car">
+                                <div class="gridViewInfo">Winter Hits</div>
+                            </div>
+
+                            <div class="gridViewItem">
+                                <img src="images/album/chalks1.jpg" alt="chalks">
+                                <div class="gridViewInfo">Dust Maker</div>
+                            </div>
+
+                            <div class="gridViewItem">
+                                <img src="images/album/musicfest1.jpg" alt="concert">
+                                <div class="gridViewInfo">Only Young Once</div>
+                            </div>
+
+                            <div class="gridViewItem">
+                                <img src="images/album/pensils1.jpg" alt="pensils">
+                                <div class="gridViewInfo">Nothing to Say</div>
+                            </div>
+
+                            <div class="gridViewItem">
+                                <img src="images/album/square.jpg" alt="masked lisa">
+                                <div class="gridViewInfo">I just called to say I tested positive</div>
+                            </div>
+
+                            <div class="gridViewItem">
+                                <img src="images/album/twohearts1.jpg" alt="hearts">
+                                <div class="gridViewInfo">I Unfriended You</div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="nowPlayingBarContainer">
+
+                <div id="nowPlayingBar">
+
+                    <div id="nowPlayingLeft">
+                        <div class="content">
+                            <span class="albumLink">
+                                <img class="albumThumb" src="images/square.jpg" alt="albumLink">
+                            </span>
+
+                            <div class="trackInfo">
+
+                                <span class="trackName">
+                                    <span>Almost Over</span>
+                                </span>
+
+                                <span class="artistName">
+                                    <span>unknown</span>
+                                </span>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div id="nowPlayingCenter">
+
+                        <!-- this div has two classes content and playerControls -->
+                        <div class="content playerControls">
+
+                            <div class="buttons">
+
+                                <button class="controlButton shuffle" title="Shuffle button">
+                                    <img src="images/icons/shuffle.png" alt="Shuffle">
+                                </button>
+
+                                <button class="controlButton previous" title="Previous button">
+                                    <img src="images/icons/previous.png" alt="Previous">
+                                </button>
+
+                                <button class="controlButton play" title="Play button">
+                                    <img src="images/icons/play.png" alt="Play">
+                                </button>
+
+                                <button class="controlButton pause" title="Pause button" style="display: none">
+                                    <img src="images/icons/pause.png" alt="Pause">
+                                </button>
+
+                                <button class="controlButton next" title="Next button">
+                                    <img src="images/icons/next.png" alt="Next">
+                                </button>
+
+                                <button class="controlButton repeat" title="repeat button">
+                                    <img src="images/icons/repeat.png" alt="repeat">
+                                </button>
+
+                            </div>
+
+                            <div class="playbackBar">
+                                <span class="progressTime current">0.00</span>
+
+                                <div class="progressBar">
+
+                                    <div class="progressBarBg">
+                                        <div class="progress"></div>
+                                    </div>
+
+                                </div>
+
+                                <span class="progressTime remaining">0.00</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="nowPlayingRight">
+                        <div class="volumeBar">
+
+                            <button class="controlButton volume" title="Volume button">
+                                <img src="images/icons/volume.png" alt="Volume">
+                            </button>
+
+                            <div class="progressBar">
+
+                                <div class="progressBarBg">
+                                    <div class="progress"></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
